@@ -144,6 +144,24 @@ aside {
 .madara-image-content {
   height: 500px;
 }
+.luffy-image-content {
+  height: 500px;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+  animation: mover 2s linear infinite;
+  z-index: 1;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 footer {
   display: flex;
   justify-content: center;
